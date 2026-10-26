@@ -15,6 +15,13 @@ def init_db():
     conn.commit()
     conn.close()
 
+@app.route("/hello", methods=["GET","POST"])
+def hello():
+    return "hello"
+
+@app.route("/hai", methods=["GET","POST"])
+def hello():
+    return "hai"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
