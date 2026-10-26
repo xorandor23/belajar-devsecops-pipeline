@@ -20,7 +20,7 @@ def hello():
     return "hello"
 
 @app.route("/hai", methods=["GET","POST"])
-def hello():
+def hai():
     return "hai"
 
 @app.route("/", methods=["GET", "POST"])
